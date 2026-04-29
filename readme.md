@@ -1,0 +1,1 @@
+A R repository for doing a couple of simple projects for a course
