@@ -1,5 +1,5 @@
 mod_tree <- rpart(
-  recurred ~ age + gender + risk + stage + response + adenopathy,
+  recurred ~ age + gender + stage + response + adenopathy,
   data = train_data,
   method = "class"
 )

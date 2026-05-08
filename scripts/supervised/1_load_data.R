@@ -2,7 +2,7 @@
 thyroid <- read_csv("data/Thyroid_Diff.csv", show_col_types = FALSE)
 
 # At least for testing purposes we only take rows with complete data 
-thyroid <- subset(thyroid, complete.cases(thyroid))
+# thyroid <- subset(thyroid, complete.cases(thyroid))
 
 # Clean column names
 thyroid <- thyroid |>
@@ -19,4 +19,4 @@ skim(thyroid)
 
 # Check target distribution
 thyroid |>
-  count(recurred)
+  dplyr::count(recurred)

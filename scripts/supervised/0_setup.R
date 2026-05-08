@@ -16,10 +16,8 @@ getwd()
 library(tidyverse)   # data handling and ggplot
 library(janitor)     # clean column names
 library(skimr)       # data summaries
-library(GGally)      # pair plots
-library(corrplot)    # correlation plots
 library(caret)       # train/test split and model evaluation
-library(broom)       # clean model outputs
+library(dplyr)       # clean model outputs
 library(rpart)       # decision tree
 library(rpart.plot)  # decision tree plots
 

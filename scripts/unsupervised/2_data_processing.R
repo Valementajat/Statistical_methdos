@@ -57,11 +57,11 @@ umap_res <- umap(
 
 
 umap_df <- data.frame(
-  cycle = cycle_data_clean$cycle,
+  cycle = cycle_data$cycle,
   Dim1 = umap_res[, 1],
   Dim2 = umap_res[, 2],
-  robot_protective_stop = cycle_data_clean$robot_protective_stop,
-  grip_lost = cycle_data_clean$grip_lost
+  robot_protective_stop = cycle_data$robot_protective_stop,
+  grip_lost = cycle_data$grip_lost
 )
 
 umap_df

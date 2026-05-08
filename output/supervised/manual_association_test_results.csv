@@ -1,0 +1,17 @@
+variable,test_used,statistic,p_value
+age,Spearman correlation,0.21157831350918507,2.9865632189848596e-5
+response,Fisher's exact test,NA,9.999000099990002e-5
+risk,Fisher's exact test,NA,9.999000099990002e-5
+stage,Fisher's exact test,NA,9.999000099990002e-5
+adenopathy,Fisher's exact test,NA,9.999000099990002e-5
+physical_examination,Fisher's exact test,NA,0.0071992800719928
+gender,Fisher's exact test,NA,1.080908500922654e-9
+smoking,Fisher's exact test,NA,9.281727943679108e-10
+hx_smoking,Fisher's exact test,NA,0.014498832167796056
+hx_radiothreapy,Fisher's exact test,NA,0.002441090839759891
+thyroid_function,Fisher's exact test,NA,0.32796720327967205
+pathology,Fisher's exact test,NA,9.999000099990002e-5
+focality,Fisher's exact test,NA,2.192495191378325e-13
+t,Fisher's exact test,NA,9.999000099990002e-5
+n,Fisher's exact test,NA,9.999000099990002e-5
+m,Fisher's exact test,NA,4.253830177225011e-11

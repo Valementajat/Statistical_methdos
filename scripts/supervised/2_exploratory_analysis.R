@@ -1,5 +1,16 @@
 # 02_exploratory_analysis.R
 
+
+cat("\nVariable types:\n")
+print(str(thyroid))
+
+cat("\nMissing values per variable:\n")
+print(colSums(is.na(thyroid)))
+
+cat("\nSummary statistics:\n")
+print(summary(thyroid))
+
+
 # Create output directory for exploratory figures
 exploratory_dir <- "figures/supervised/exploratory"
 
@@ -17,7 +28,7 @@ p_recurred <- ggplot(thyroid, aes(x = recurred)) +
     y = "Number of Patients"
   )
 
-p_recurred
+
 
 ggsave(
   filename = file.path(exploratory_dir, "recurrence_distribution.png"),
@@ -36,7 +47,7 @@ p_age_recurred <- ggplot(thyroid, aes(x = recurred, y = age)) +
     y = "Age"
   )
 
-p_age_recurred
+
 
 ggsave(
   filename = file.path(exploratory_dir, "age_by_recurrence.png"),
@@ -57,7 +68,7 @@ p_response <- ggplot(thyroid, aes(x = response, fill = recurred)) +
   ) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-p_response
+
 
 ggsave(
   filename = file.path(exploratory_dir, "response_by_recurrence.png"),
@@ -77,7 +88,7 @@ p_risk <- ggplot(thyroid, aes(x = risk, fill = recurred)) +
     fill = "Recurred"
   )
 
-p_risk
+
 
 ggsave(
   filename = file.path(exploratory_dir, "risk_by_recurrence.png"),
@@ -97,7 +108,7 @@ p_stage <- ggplot(thyroid, aes(x = stage, fill = recurred)) +
     fill = "Recurred"
   )
 
-p_stage
+
 
 ggsave(
   filename = file.path(exploratory_dir, "stage_by_recurrence.png"),
