@@ -1,9 +1,8 @@
 
-
 projection_plot <- ggplot(
   umap_df,
-  aes(x = Dim1, y = Dim2,
-      color = robot_protective_stop)
+  aes(x = Dim1, y = Dim2, color = "Sensor Data"
+      )
 ) +
   geom_point(size = 2, alpha = 0.7) +
   theme_minimal() +
@@ -12,6 +11,24 @@ projection_plot <- ggplot(
 ggsave(
   filename = file.path(exploratory_dir, "projection_plot.png"),
   plot = projection_plot,
+  width = 6,
+  height = 4,
+  dpi = 300
+)
+
+
+projection_stop_plot <- ggplot(
+  umap_df,
+  aes(x = Dim1, y = Dim2,
+      color = robot_protective_stop)
+) +
+  geom_point(size = 2, alpha = 0.7) +
+  theme_minimal() +
+  ggtitle("UMAP Projection Colored by Protective Stop") 
+
+ggsave(
+  filename = file.path(exploratory_dir, "projection_stop_plot.png"),
+  plot = projection_stop_plot,
   width = 6,
   height = 4,
   dpi = 300
